@@ -197,20 +197,17 @@ function updateCountdown() {
     // TIEMPO HASTA EL PRÓXIMO CAMBIO
     // --------------------------------
 
-    const remaining = getTimeUntilNextDay();
+const remaining = getTimeUntilNextDay();
 
-    const hours = Math.floor(
-        remaining / 3600000
-    );
+const totalSeconds = Math.ceil(remaining / 1000);
 
-    const minutes = Math.floor(
-        (remaining % 3600000) / 60000
-    );
+const hours = Math.floor(totalSeconds / 3600);
 
-    const seconds = Math.floor(
-        (remaining % 60000) / 1000
-    );
+const minutes = Math.floor(
+    (totalSeconds % 3600) / 60
+);
 
+const seconds = totalSeconds % 60;
 
     hoursElement.textContent =
         String(hours).padStart(2, "0");
@@ -233,15 +230,13 @@ function updateCountdown() {
 
 function startTimer() {
 
-    clearInterval(timer);
+    if (timer !== null) {
+        clearInterval(timer);
+    }
 
     updateCountdown();
 
-    timer = setInterval(() => {
-
-        updateCountdown();
-
-    }, 1000);
+    timer = setInterval(updateCountdown, 250);
 }
 
 
