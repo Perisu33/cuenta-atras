@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0e0e19, #241b3d);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.app {
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 28px;
+    padding: 30px 22px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(15px);
+}
+
+.icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+.subtitle {
+    color: #c9c5d8;
+    line-height: 1.5;
+    margin: 12px 0 28px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 14px;
+    font-size: 17px;
+    background: white;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #8b5cf6;
+    color: white;
+    transition: transform 0.15s, opacity 0.15s;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.hidden {
+    display: none;
+}
+
+.date-text {
+    color: #c9c5d8;
+    margin-bottom: 25px;
+}
+
+.days-container {
+    margin: 10px 0 30px;
+}
+
+#days {
+    display: block;
+    font-size: 85px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.days-container small {
+    color: #c9c5d8;
+    font-size: 17px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.time-box {
+    min-width: 75px;
+}
+
+.time-box span {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.time-box small {
+    color: #aaa5b8;
+    font-size: 12px;
+}
+
+.separator {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.message {
+    min-height: 24px;
+    color: #d8b4fe;
+}
+
+.secondary-button {
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+    color: #8f899e;
+    font-size: 13px;
+    margin-top: 18px;
+}
+
+@media (max-width: 380px) {
+    #days {
+        font-size: 70px;
+    }
+
+    .time-box {
+        min-width: 65px;
+    }
+
+    .time-box span {
+        font-size: 27px;
+    }
+}
