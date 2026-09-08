@@ -1,0 +1,11 @@
+{
+  "name": "Cuenta Atrás",
+  "short_name": "Cuenta Atrás",
+  "description": "Una cuenta atrás personal para una fecha especial.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0e0e19",
+  "theme_color": "#17172b",
+  "orientation": "portrait",
+  "lang": "es"
+}
