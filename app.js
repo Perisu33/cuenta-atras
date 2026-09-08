@@ -59,7 +59,7 @@ function calculateDaysRemaining(targetDateString) {
 
     return Math.max(
         0,
-        Math.round(difference / 86400000)
+        Math.round(difference / 86400000) + 1
     );
 }
 
