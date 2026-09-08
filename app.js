@@ -199,8 +199,8 @@ function updateCountdown() {
 
 const remaining = getTimeUntilNextDay();
 
-const totalSeconds = Math.ceil(remaining / 1000);
-
+const totalSeconds = Math.max(0, Math.floor(remaining / 1000));
+    
 const hours = Math.floor(totalSeconds / 3600);
 
 const minutes = Math.floor(
