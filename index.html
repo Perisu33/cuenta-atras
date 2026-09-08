@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#17172b">
+
+    <title>Cuenta Atrás</title>
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <section class="card">
+
+            <div class="icon">⏳</div>
+
+            <h1>Cuenta atrás</h1>
+
+            <p class="subtitle">
+                Elige una fecha y deja que el tiempo haga el resto.
+            </p>
+
+            <!-- PANTALLA INICIAL -->
+            <div id="setup">
+
+                <label for="targetDate">
+                    ¿Para qué fecha es?
+                </label>
+
+                <input type="date" id="targetDate">
+
+                <button id="startButton">
+                    ▶ Iniciar cuenta atrás
+                </button>
+
+            </div>
+
+
+            <!-- CUENTA ATRÁS -->
+            <div id="countdown" class="hidden">
+
+                <p class="date-text">
+                    Fecha objetivo:
+                    <strong id="dateText"></strong>
+                </p>
+
+
+                <div class="days-container">
+
+                    <span id="days">0</span>
+
+                    <small>
+                        días restantes
+                    </small>
+
+                </div>
+
+
+                <div class="timer">
+
+                    <div class="time-box">
+                        <span id="hours">00</span>
+                        <small>horas</small>
+                    </div>
+
+                    <div class="separator">:</div>
+
+                    <div class="time-box">
+                        <span id="minutes">00</span>
+                        <small>minutos</small>
+                    </div>
+
+                    <div class="separator">:</div>
+
+                    <div class="time-box">
+                        <span id="seconds">00</span>
+                        <small>segundos</small>
+                    </div>
+
+                </div>
+
+
+                <p id="message" class="message"></p>
+
+
+                <button id="resetButton" class="secondary-button">
+                    🔄 Cambiar fecha
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <p class="footer">
+            Tu cuenta atrás personal 💜
+        </p>
+
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
