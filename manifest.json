@@ -1,11 +1,29 @@
+
 {
+  "id": "./",
   "name": "Cuenta Atrás",
   "short_name": "Cuenta Atrás",
   "description": "Una cuenta atrás personal para una fecha especial.",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
+  "display_override": ["standalone"],
   "background_color": "#0e0e19",
   "theme_color": "#17172b",
   "orientation": "portrait",
-  "lang": "es"
+  "lang": "es",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
 }
