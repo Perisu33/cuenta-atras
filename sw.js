@@ -1,4 +1,4 @@
-const CACHE_NAME = "cuenta-atras-v2";
+const CACHE_NAME = "cuenta-atras-v3";
 const FILES_TO_CACHE = [
     "./",
     "./index.html",
